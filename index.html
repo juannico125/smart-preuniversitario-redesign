@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Preuniversitario · Popayán — Pre Saber 11 y Preuniversitario UdeA</title>
+<meta name="description" content="Preparación presencial en Popayán para la prueba Saber 11 del ICFES y para el examen de admisión de la Universidad de Antioquia. Demostración de diseño, no oficial.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,800&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- ============ Nav · N1b canonical three-section, floating rounded ============ -->
+<header class="nav" id="nav">
+  <nav class="nav__inner" aria-label="Principal">
+    <a class="nav__brand" href="#top">
+      <span class="nav__mark" aria-hidden="true"></span>
+      <span class="nav__word">Smart<span class="nav__word-2">Preuniversitario</span></span>
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#programas">Programas</a></li>
+      <li><a href="#ruta">La ruta</a></li>
+      <li><a href="#sede">Sede</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <a class="nav__quiet" href="#informacion">Estudiantes</a>
+      <a class="btn btn--fill nav__cta" href="#informacion">Solicitar información</a>
+    </div>
+
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet">
+      <span class="nav__toggle-bars" aria-hidden="true"></span>
+      <span class="u-sr">Abrir menú</span>
+    </button>
+  </nav>
+
+  <div class="nav__sheet" id="nav-sheet" hidden>
+    <a href="#programas">Programas</a>
+    <a href="#ruta">La ruta</a>
+    <a href="#sede">Sede</a>
+    <a href="#preguntas">Preguntas</a>
+    <a href="#informacion">Estudiantes</a>
+    <a class="btn btn--fill" href="#informacion">Solicitar información</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ Hero · H2 split diptych · ratio 7/5 · right = ficha técnica ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero__grid">
+
+    <div class="hero__lede">
+      <h1 class="hero__h1">
+        Del colegio a la universidad,
+        <em class="hero__em">con método.</em>
+      </h1>
+
+      <p class="hero__p">
+        Smart Preuniversitario prepara estudiantes de Popayán para la prueba
+        Saber&nbsp;11 del ICFES y para el examen de admisión de la Universidad
+        de Antioquia. Presencial, en el centro, desde 2011.
+      </p>
+
+      <ul class="chips">
+        <li class="chip">Presencial · Sede Centro de Popayán</li>
+        <li class="chip">Pre Saber 11 y Preuniversitario UdeA</li>
+        <li class="chip">Operando desde 2011</li>
+        <li class="chip">Aprobado por la Secretaría de Educación</li>
+      </ul>
+
+      <div class="hero__actions">
+        <a class="btn btn--fill" href="#informacion">Solicitar información</a>
+        <a class="btn btn--ghost" href="#programas">Ver los programas</a>
+      </div>
+    </div>
+
+    <!-- Proof column: a real spec panel. Empty fields are labelled, not invented. -->
+    <aside class="ficha" aria-labelledby="ficha-h">
+      <h2 class="ficha__h" id="ficha-h">Ficha del ciclo</h2>
+
+      <dl class="ficha__list">
+        <div class="ficha__row">
+          <dt>Programas</dt>
+          <dd>Pre Saber 11 · Preuniversitario UdeA</dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Modalidad</dt>
+          <dd>Presencial</dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Ciudad</dt>
+          <dd>Popayán, Cauca</dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Inicio del próximo ciclo</dt>
+          <dd><span class="pending">— por confirmar</span></dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Duración</dt>
+          <dd><span class="pending">— por confirmar</span></dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Inversión</dt>
+          <dd><span class="pending">— por confirmar</span></dd>
+        </div>
+      </dl>
+
+      <p class="ficha__note">
+        Los campos marcados <span class="pending pending--inline">—</span> están
+        pendientes de confirmación por la institución. Esta demostración no
+        publica cifras que no pueda verificar.
+      </p>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ============ Hechos verificables · T4 stat strip — real facts only ============ -->
+<section class="facts" aria-label="La institución en cifras">
+  <div class="wrap facts__grid">
+    <div class="fact">
+      <p class="fact__n">2011</p>
+      <p class="fact__q">Año de fundación</p>
+    </div>
+    <div class="fact">
+      <p class="fact__n">15</p>
+      <p class="fact__q">Años de operación continua</p>
+    </div>
+    <div class="fact">
+      <p class="fact__n">2</p>
+      <p class="fact__q">Programas de preparación</p>
+    </div>
+    <div class="fact">
+      <p class="fact__n">1</p>
+      <p class="fact__q">Sede, en el centro de Popayán</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Programas · F3 tabular spec sheet ============ -->
+<section class="section" id="programas">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="head__h">Dos programas, dos exámenes distintos.</h2>
+      <p class="head__p">
+        No son el mismo curso con otro nombre. La prueba Saber&nbsp;11 mide
+        competencias en cinco áreas; el examen de admisión de la UdeA mide
+        razonamiento lógico y competencia lectora. Se preparan por separado.
+      </p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="spec">
+        <caption class="u-sr">Comparación entre el programa Pre Saber 11 y el Preuniversitario UdeA</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="spec__key">&nbsp;</th>
+            <th scope="col">Pre Saber 11</th>
+            <th scope="col">Preuniversitario UdeA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Objetivo</th>
+            <td>Elevar el puntaje global en la prueba Saber&nbsp;11 del ICFES.</td>
+            <td>Presentar el examen de admisión de la Universidad de Antioquia.</td>
+          </tr>
+          <tr>
+            <th scope="row">Dirigido a</th>
+            <td>Estudiantes de grado 10.° y 11.°</td>
+            <td>Estudiantes de grado 11.° y bachilleres</td>
+          </tr>
+          <tr>
+            <th scope="row">Áreas que cubre</th>
+            <td>Lectura crítica · Matemáticas · Sociales y ciudadanas · Ciencias naturales · Inglés</td>
+            <td>Razonamiento lógico · Competencia lectora</td>
+          </tr>
+          <tr>
+            <th scope="row">Modalidad</th>
+            <td>Presencial — Sede Centro</td>
+            <td>Presencial — Sede Centro</td>
+          </tr>
+          <tr>
+            <th scope="row">Duración</th>
+            <td><span class="pending">— por confirmar</span></td>
+            <td><span class="pending">— por confirmar</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Intensidad horaria</th>
+            <td><span class="pending">— por confirmar</span></td>
+            <td><span class="pending">— por confirmar</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Inicio del ciclo</th>
+            <td><span class="pending">— por confirmar</span></td>
+            <td><span class="pending">— por confirmar</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Inversión</th>
+            <td><span class="pending">— por confirmar</span></td>
+            <td><span class="pending">— por confirmar</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ La ruta · F4 step sequence — the macrostructure's spine ============ -->
+<section class="section section--tint" id="ruta">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="head__h">La ruta, de principio a fin.</h2>
+      <p class="head__p">
+        Un preuniversitario no vende clases sueltas: vende un recorrido. Este es
+        el orden en que trabajamos, y el estudiante sabe en qué punto está
+        durante todo el ciclo.
+      </p>
+    </div>
+
+    <ol class="ruta">
+      <li class="paso">
+        <p class="paso__n">01</p>
+        <div class="paso__body">
+          <h3 class="paso__h">Diagnóstico</h3>
+          <p>
+            Una prueba inicial completa, en condiciones de examen. No para
+            calificar: para saber exactamente dónde está cada estudiante por
+            área antes de empezar.
+          </p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__n">02</p>
+        <div class="paso__body">
+          <h3 class="paso__h">Fundamentación</h3>
+          <p>
+            Repaso de los contenidos base de cada área. Aquí se cierran los
+            vacíos que arrastra el colegio — sin esto, entrenar preguntas no
+            sirve de nada.
+          </p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__n">03</p>
+        <div class="paso__body">
+          <h3 class="paso__h">Entrenamiento</h3>
+          <p>
+            Resolución sostenida de preguntas del tipo exacto del examen. El
+            estudiante aprende la lógica de la pregunta, no solo el tema que
+            evalúa.
+          </p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__n">04</p>
+        <div class="paso__body">
+          <h3 class="paso__h">Simulacros</h3>
+          <p>
+            Pruebas cronometradas con la estructura y la duración reales. El
+            objetivo es que el día del examen no sea la primera vez que se
+            siente esa presión.
+          </p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__n">05</p>
+        <div class="paso__body">
+          <h3 class="paso__h">Presentación</h3>
+          <p>
+            Acompañamiento en la inscripción, el cronograma oficial y la
+            logística del día de la prueba. Terminar bien preparado y llegar
+            tarde es perder el ciclo entero.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ Cómo enseñamos · prose, S2 hanging head ============ -->
+<section class="section" id="metodo">
+  <div class="wrap prose-grid">
+    <div class="prose">
+      <h2 class="head__h">Por qué presencial, y por qué en grupo pequeño.</h2>
+      <p>
+        La prueba Saber&nbsp;11 y el examen de la UdeA no premian saber más
+        contenido. Premian resolver bajo tiempo, descartar rápido y sostener la
+        atención tres horas seguidas. Eso se entrena en un salón, con alguien
+        mirando cómo trabaja el estudiante y corrigiendo el hábito en el momento.
+      </p>
+      <p>
+        Un video no puede ver que un estudiante lleva doce minutos en una
+        pregunta que debía tomarle noventa segundos. Un docente sí. Por eso el
+        ciclo es presencial en la sede del centro de Popayán, y por eso los
+        simulacros se hacen en el salón y no en la casa.
+      </p>
+      <p>
+        El aula virtual existe y está activa, pero cumple otra función: es donde
+        el estudiante matriculado encuentra material de repaso, circulares y
+        resultados entre sesión y sesión.
+      </p>
+    </div>
+
+    <aside class="aside-card">
+      <h3 class="aside-card__h">Aprobación oficial</h3>
+      <p class="aside-card__p">
+        Smart Preuniversitario opera bajo la Resolución
+        <span class="mono">N.° 20161700086834</span> del 10 de agosto de 2016,
+        expedida por la Secretaría de Educación Municipal de Popayán.
+      </p>
+      <p class="aside-card__p aside-card__p--muted">
+        Institución constituida el 25 de julio de 2011.
+      </p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ Sede ============ -->
+<section class="section section--tint" id="sede">
+  <div class="wrap sede">
+    <div>
+      <h2 class="head__h">La sede.</h2>
+      <p class="sede__addr">Calle 5 <span class="mono">#</span> 3-18, Centro<br>Popayán, Cauca</p>
+      <dl class="sede__list">
+        <div class="sede__row">
+          <dt>Teléfono fijo</dt>
+          <dd class="mono">838 7383</dd>
+        </div>
+        <div class="sede__row">
+          <dt>Celular</dt>
+          <dd class="mono">313 657 3011</dd>
+        </div>
+        <div class="sede__row">
+          <dt>Celular</dt>
+          <dd class="mono">321 247 0001</dd>
+        </div>
+        <div class="sede__row">
+          <dt>Horario de atención</dt>
+          <dd><span class="pending">— por confirmar</span></dd>
+        </div>
+      </dl>
+      <a class="btn btn--ghost" href="#informacion">Agendar una visita</a>
+    </div>
+
+    <div class="map-well" role="img" aria-label="Espacio reservado para el mapa de la sede en Calle 5 número 3-18, centro de Popayán.">
+      <p class="map-well__t">Mapa de la sede</p>
+      <p class="map-well__s">
+        Espacio reservado. En la versión conectada va un mapa embebido —
+        en esta demostración no se cargan servicios externos.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ · accordion ============ -->
+<section class="section" id="preguntas">
+  <div class="wrap wrap--narrow">
+    <h2 class="head__h">Preguntas que nos hacen.</h2>
+
+    <div class="faq">
+      <details class="qa">
+        <summary>¿Dónde queda la sede?</summary>
+        <div class="qa__body">
+          <p>En la Calle 5 <span class="mono">#</span> 3-18, en el centro de
+          Popayán. Es la única sede.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>¿Están aprobados oficialmente?</summary>
+        <div class="qa__body">
+          <p>Sí. Resolución <span class="mono">N.° 20161700086834</span> del 10
+          de agosto de 2016, de la Secretaría de Educación Municipal de Popayán.
+          La institución se constituyó el 25 de julio de 2011.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>¿Cuánto cuesta el ciclo?</summary>
+        <div class="qa__body">
+          <p><span class="pending">— por confirmar.</span> No publicamos una
+          cifra en esta demostración sin que la institución la valide. Escríbenos
+          y te pasamos el valor vigente del ciclo que te interesa.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>¿Cuándo inicia el próximo ciclo?</summary>
+        <div class="qa__body">
+          <p><span class="pending">— por confirmar.</span> Los cronogramas
+          dependen de las fechas oficiales del ICFES y de la UdeA, que se
+          publican por convocatoria.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>¿Cómo se paga?</summary>
+        <div class="qa__body">
+          <p>Por PSE a través de Davivienda y por la plataforma Zona Pagos, los
+          dos canales que la institución ya tiene habilitados.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>¿Hay clases virtuales?</summary>
+        <div class="qa__body">
+          <p>El ciclo es presencial. El aula virtual es un complemento para
+          estudiantes matriculados: material de repaso, circulares y resultados.
+          Ocasionalmente se programan jornadas virtuales cuando el calendario lo
+          obliga.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>¿Qué pasa si mi hijo entra a mitad de ciclo?</summary>
+        <div class="qa__body">
+          <p><span class="pending">— por confirmar.</span> Depende del punto de
+          la ruta en que vaya el grupo. Escríbenos con la fecha y te decimos si
+          conviene entrar o esperar al siguiente ciclo.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA final · formulario visual, sin conectar ============ -->
+<section class="section cta" id="informacion">
+  <div class="wrap cta__grid">
+    <div>
+      <h2 class="cta__h">Cuéntanos quién eres y te escribimos.</h2>
+      <p class="cta__p">
+        Te respondemos con el valor del ciclo, la fecha de inicio y el
+        cronograma del programa que te interesa.
+      </p>
+    </div>
+
+    <!-- No action, no method, no handler. Nothing is submitted. -->
+    <form class="form" novalidate aria-describedby="form-demo">
+      <p class="form__demo" id="form-demo">
+        Formulario de demostración — no envía datos a ningún servidor.
+      </p>
+
+      <div class="field">
+        <label for="f-nombre">Nombre completo</label>
+        <input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder="Nombre y apellido">
+      </div>
+
+      <div class="field">
+        <label for="f-quien">¿Quién escribe?</label>
+        <select id="f-quien" name="quien">
+          <option>Estudiante</option>
+          <option>Madre, padre o acudiente</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="f-programa">Programa de interés</label>
+        <select id="f-programa" name="programa">
+          <option>Pre Saber 11</option>
+          <option>Preuniversitario UdeA</option>
+          <option>Todavía no lo tengo claro</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="f-tel">Celular</label>
+        <input id="f-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="300 000 0000">
+      </div>
+
+      <button class="btn btn--fill btn--block" type="button" disabled>
+        Enviar solicitud
+      </button>
+      <p class="form__note">Desactivado en la demostración.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer · Ft1 mast-headed ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__mast">
+      <p class="foot__word">Smart Preuniversitario</p>
+      <p class="foot__tag">Popayán, Cauca — desde 2011.</p>
+    </div>
+
+    <ul class="foot__links">
+      <li><a href="#programas">Programas</a></li>
+      <li><a href="#ruta">La ruta</a></li>
+      <li><a href="#metodo">Método</a></li>
+      <li><a href="#sede">Sede</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+      <li><a href="#informacion">Contacto</a></li>
+    </ul>
+
+    <div class="foot__legal">
+      <p>Calle 5 <span class="mono">#</span> 3-18, Centro · Popayán, Cauca · <span class="mono">838 7383</span></p>
+      <p>Resolución <span class="mono">N.° 20161700086834</span> del 10 de agosto de 2016 — Secretaría de Educación Municipal de Popayán.</p>
+      <p class="foot__demo">
+        Demostración de diseño, no oficial. Página estática sin funciones
+        conectadas, construida como propuesta de rediseño.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ C4 sticky bottom bar · reveals after the fold ============ -->
+<div class="bar" id="bar" hidden>
+  <p class="bar__t">Inscripciones abiertas para el próximo ciclo.</p>
+  <a class="btn btn--fill btn--sm" href="#informacion">Solicitar información</a>
+  <button class="bar__x" type="button" aria-label="Cerrar aviso">
+    <span aria-hidden="true">×</span>
+  </button>
+</div>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Hallmark · tokens · Smart Preuniversitario
+ * theme: custom (tuned) · vibe: "institucional cálido, claro, sin adornos"
+ * axes: light / geometric-sans / chromatic-other (menta ~150°)
+ * Visual register informed by the reference screenshot the user supplied:
+ * warm off-white paper, near-black ink, pale mint accent blocks, black pill CTAs,
+ * generous card radii. Structure is NOT taken from the reference.
+ *
+ * Every colour and font in the build references a token from this file.
+ */
+
+:root {
+  /* ---- Colour ------------------------------------------------------ */
+  /* Warm off-white paper — never pure #fff. Chroma > 0 in every neutral. */
+  --color-paper:       oklch(95.6% 0.006 85);
+  --color-paper-2:     oklch(99% 0.005 85);   /* raised card surfaces */
+  --color-paper-3:     oklch(92.4% 0.008 85); /* recessed wells */
+
+  --color-ink:         oklch(18.5% 0.012 260);
+  --color-ink-2:       oklch(41% 0.010 260);
+  /* L 43 % — clears 4.5:1 on paper (5.2:1) AND on paper-3 (4.8:1). */
+  --color-muted:       oklch(43% 0.011 260);
+
+  --color-rule:        oklch(87.5% 0.007 85);
+  --color-rule-2:      oklch(91.5% 0.005 85);
+
+  /* Mint — the reference's signal colour. Used as a FILL on blocks, and in a
+   * darker cut for text/links so it clears contrast on paper. */
+  --color-accent:      oklch(89.5% 0.095 150);  /* pale mint block fill */
+  --color-accent-2:    oklch(84% 0.115 150);    /* deeper mint block */
+  --color-accent-ink:  oklch(24% 0.055 152);    /* text ON mint — 9.1:1 */
+  --color-accent-text: oklch(44% 0.125 152);    /* mint as text on paper — 5.4:1 */
+
+  /* Primary CTA is an ink-filled pill, matching the reference register. */
+  --color-cta:         oklch(18.5% 0.012 260);
+  --color-cta-ink:     oklch(97% 0.006 85);
+  --color-cta-hover:   oklch(28% 0.018 260);
+
+  --color-focus:       oklch(52% 0.17 152);
+
+  /* Placeholder surfaces — the "dato por confirmar" blocks. */
+  --color-pending:     oklch(90.5% 0.005 85);
+  /* L 40 % — clears 5.1:1 against --color-pending. */
+  --color-pending-ink: oklch(40% 0.010 85);
+
+  /* ---- Type -------------------------------------------------------- */
+  --font-display: "Bricolage Grotesque", "Public Sans", sans-serif;
+  --font-body:    "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  --weight-body:      400;
+  --weight-medium:    500;
+  --weight-display:   600;
+  --weight-emphasis:  800;
+
+  --text-xs:        0.75rem;
+  --text-sm:        0.8125rem;
+  --text-base:      1rem;
+  --text-md:        1.0625rem;
+  --text-lg:        1.1875rem;
+  --text-xl:        1.4375rem;
+  --text-2xl:       clamp(1.75rem, 1.4rem + 1.4vw, 2.375rem);
+  --text-3xl:       clamp(2.125rem, 1.6rem + 2.3vw, 3.125rem);
+  --text-display-s: clamp(2.375rem, 1.75rem + 2.8vw, 3.75rem);
+  --text-display:   clamp(2.625rem, 1.8rem + 3.9vw, 4.75rem);
+
+  --track-display: -0.032em;
+  --track-tight:   -0.015em;
+  --track-label:    0.08em;
+
+  --leading-display: 1.02;
+  --leading-tight:   1.2;
+  --leading-body:    1.62;
+
+  /* ---- Space — 4 pt scale ------------------------------------------ */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: 7rem;
+  --space-4xl: 9.5rem;
+
+  --measure:  64ch;
+  --gutter:   clamp(1.125rem, 4vw, 2.5rem);
+  --page-max: 78rem;
+
+  /* ---- Line + radius ----------------------------------------------- */
+  --rule-hair:  1px;
+  --rule-solid: 2px;
+
+  /* Generous radii, per the reference register. */
+  --radius-input: 12px;
+  --radius-chip:  999px;
+  --radius-card:  24px;
+  --radius-well:  16px;
+  --radius-pill:  999px;
+
+  /* ---- Motion ------------------------------------------------------ */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --dur-instant: 90ms;
+  --dur-short:   200ms;
+  --dur-medium:  320ms;
+
+  /* ---- Elevation --------------------------------------------------- */
+  --z-base:    1;
+  --z-sticky:  20;
+  --z-nav:     30;
+  --z-bar:     40;
+  --z-overlay: 50;
+}
