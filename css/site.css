@@ -1044,27 +1044,29 @@ a { color: inherit; }
 
 /* ============ Accesos rápidos ============ */
 
+/* No boxes. Five destinations divided by hairlines — the rule does the work a
+ * card border was doing, at a fraction of the visual weight. */
 .accesos { padding-block: var(--space-xl); }
-.accesos__grid {
+.quick {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: var(--space-sm);
+  border-block: var(--rule-hair) solid var(--color-rule);
 }
-.acceso {
+.quick li + li { border-left: var(--rule-hair) solid var(--color-rule); }
+.quick a {
   display: grid;
-  align-content: space-between;
-  gap: var(--space-md);
-  min-height: 9.5rem;
+  align-content: start;
+  gap: var(--space-3xs);
   height: 100%;
-  padding: var(--space-md);
-  background: var(--color-accent);
-  color: var(--color-accent-ink);
-  border-radius: var(--radius-card);
+  padding: var(--space-md) var(--space-md) var(--space-md) 0;
   text-decoration: none;
-  transition: background-color var(--dur-short) var(--ease-out);
+  transition: color var(--dur-short) var(--ease-out);
 }
-.acceso:hover { background: var(--color-accent-2); }
-.acceso__t {
+.quick li + li a { padding-left: var(--space-md); }
+.quick a:hover { color: var(--color-accent-text); }
+.quick a:hover .quick__t { text-decoration: underline; text-underline-offset: 4px; }
+
+.quick__t {
   font-family: var(--font-display);
   font-size: var(--text-lg);
   font-weight: var(--weight-emphasis);
@@ -1072,12 +1074,7 @@ a { color: inherit; }
   line-height: 1.15;
   overflow-wrap: anywhere;
 }
-.acceso__s { font-size: var(--text-sm); opacity: 0.82; }
-
-.acceso--deep { background: var(--color-brand-deep); color: var(--color-cta-ink); }
-.acceso--deep:hover { background: var(--color-cta-hover); }
-.acceso--gold { background: var(--color-gold); color: var(--color-ink); }
-.acceso--gold:hover { background: var(--color-gold-soft); }
+.quick__s { font-size: var(--text-sm); color: var(--color-muted); }
 
 /* ============ Ficha grid ============ */
 
@@ -1142,12 +1139,10 @@ a { color: inherit; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-lg);
 }
+/* A rule above, not a box around. */
 .inst {
-  padding: var(--space-lg);
-  background: var(--color-paper-2);
-  border: var(--rule-hair) solid var(--color-rule);
-  border-top: 4px solid var(--color-brand);
-  border-radius: var(--radius-card);
+  padding-top: var(--space-md);
+  border-top: var(--rule-solid) solid var(--color-brand);
 }
 .inst__h {
   font-size: var(--text-xl);
@@ -1160,27 +1155,27 @@ a { color: inherit; }
 
 /* ============ Tarjetas pendientes (admitidos) ============ */
 
-.pend-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-lg);
+/* Tabular rows on hairlines, not three cards. */
+.pend-list {
   margin-bottom: var(--space-2xl);
+  border-top: var(--rule-solid) solid var(--color-ink);
 }
-.pend-card {
-  padding: var(--space-lg);
-  background: var(--color-paper-2);
-  border: var(--rule-hair) solid var(--color-rule);
-  border-radius: var(--radius-card);
+.pend-row {
+  display: grid;
+  grid-template-columns: minmax(0, 14rem) minmax(0, 12rem) minmax(0, 1fr);
+  gap: var(--space-md);
+  align-items: baseline;
+  padding-block: var(--space-md);
+  border-bottom: var(--rule-hair) solid var(--color-rule);
 }
-.pend-card__k {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  letter-spacing: var(--track-label);
-  text-transform: uppercase;
-  color: var(--color-muted);
+.pend-row dt {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-display);
+  letter-spacing: var(--track-tight);
 }
-.pend-card__v { margin-block: var(--space-sm); font-size: var(--text-xl); }
-.pend-card__s { font-size: var(--text-sm); color: var(--color-muted); }
+.pend-row__v { font-size: var(--text-base); }
+.pend-row__s { font-size: var(--text-sm); color: var(--color-muted); }
 
 .gal {
   display: grid;
@@ -1226,25 +1221,25 @@ a { color: inherit; }
 
 /* ============ Servicios ============ */
 
-.serv-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-lg);
+/* A ledger of four services on hairlines. No fills, no radii. */
+.serv-list {
   margin-top: var(--space-xl);
+  border-top: var(--rule-solid) solid var(--color-ink);
 }
 .serv {
-  padding: var(--space-lg);
-  background: var(--color-accent);
-  color: var(--color-accent-ink);
-  border-radius: var(--radius-card);
+  display: grid;
+  grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+  gap: var(--space-md);
+  padding-block: var(--space-lg);
+  border-bottom: var(--rule-hair) solid var(--color-rule);
 }
 .serv__h {
   font-size: var(--text-xl);
   font-weight: var(--weight-emphasis);
-  margin-bottom: var(--space-2xs);
 }
-.serv p { font-size: var(--text-base); }
-.serv__link { margin-top: var(--space-sm); }
+.serv__body { max-width: 56ch; }
+.serv__body p { font-size: var(--text-base); color: var(--color-ink-2); }
+.serv__link { margin-top: var(--space-2xs); }
 
 /* ============ Lo más visto ============ */
 
@@ -1324,7 +1319,10 @@ a { color: inherit; }
 /* ============ Responsive — componentes nuevos ============ */
 
 @media (max-width: 72rem) {
-  .accesos__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .quick { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .quick li:nth-child(n + 4) { border-top: var(--rule-hair) solid var(--color-rule); }
+  .quick li:nth-child(4) { border-left: 0; }
+  .quick li:nth-child(4) a { padding-left: 0; }
   .nav__links { gap: var(--space-3xs); }
 }
 
@@ -1336,10 +1334,11 @@ a { color: inherit; }
   .band__grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
 
   .inst-grid,
-  .pend-grid,
   .gal,
-  .ents,
-  .serv-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ents { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .pend-row { grid-template-columns: minmax(0, 1fr) minmax(0, 10rem); }
+  .pend-row__s { grid-column: 1 / -1; }
 
   .foot__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
@@ -1347,16 +1346,20 @@ a { color: inherit; }
 }
 
 @media (max-width: 40rem) {
-  .accesos__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .acceso { min-height: 8rem; }
+  .quick { grid-template-columns: minmax(0, 1fr); }
+  .quick li + li { border-left: 0; border-top: var(--rule-hair) solid var(--color-rule); }
+  .quick li + li a { padding-left: 0; }
+  .quick a { padding-block: var(--space-sm); }
 
+  .pend-row,
+  .serv,
   .inst-grid,
-  .pend-grid,
   .gal,
   .ents,
-  .serv-grid,
   .cta__meta,
   .foot__cols { grid-template-columns: minmax(0, 1fr); }
+  .pend-row { gap: var(--space-3xs); }
+  .serv { gap: var(--space-2xs); }
 
   .slot--21x9,
   .slot--16x10 { aspect-ratio: 4 / 3; }

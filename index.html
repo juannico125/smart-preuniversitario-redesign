@@ -131,26 +131,26 @@
 <section class="accesos" aria-labelledby="accesos-h">
   <div class="wrap">
     <h2 class="u-sr" id="accesos-h">Accesos rápidos</h2>
-    <ul class="accesos__grid">
-      <li><a class="acceso acceso--deep" href="#estudiantes">
-        <span class="acceso__t">Estudiantes</span>
-        <span class="acceso__s">Aula virtual y material</span>
+    <ul class="quick">
+      <li><a href="#estudiantes">
+        <span class="quick__t">Estudiantes</span>
+        <span class="quick__s">Aula virtual y material</span>
       </a></li>
-      <li><a class="acceso acceso--gold" href="#trabaje">
-        <span class="acceso__t">Trabaje con nosotros</span>
-        <span class="acceso__s">Convocatorias docentes</span>
+      <li><a href="#trabaje">
+        <span class="quick__t">Trabaje con nosotros</span>
+        <span class="quick__s">Convocatorias docentes</span>
       </a></li>
-      <li><a class="acceso" href="#pqrsf">
-        <span class="acceso__t">P.Q.R.S.F</span>
-        <span class="acceso__s">Peticiones y reclamos</span>
+      <li><a href="#pqrsf">
+        <span class="quick__t">P.Q.R.S.F</span>
+        <span class="quick__s">Peticiones y reclamos</span>
       </a></li>
-      <li><a class="acceso acceso--gold" href="#pagos">
-        <span class="acceso__t">Pagos en línea</span>
-        <span class="acceso__s">Davivienda PSE · Zona Pagos</span>
+      <li><a href="#pagos">
+        <span class="quick__t">Pagos en línea</span>
+        <span class="quick__s">Davivienda PSE · Zona Pagos</span>
       </a></li>
-      <li><a class="acceso acceso--deep" href="#admitidos">
-        <span class="acceso__t">Nuestros puntajes</span>
-        <span class="acceso__s">Admitidos y resultados</span>
+      <li><a href="#admitidos">
+        <span class="quick__t">Nuestros puntajes</span>
+        <span class="quick__s">Admitidos y resultados</span>
       </a></li>
     </ul>
   </div>
@@ -468,23 +468,23 @@
       </p>
     </div>
 
-    <div class="pend-grid">
-      <div class="pend-card">
-        <p class="pend-card__k">Admitidos UdeA</p>
-        <p class="pend-card__v"><span class="pending">— por confirmar</span></p>
-        <p class="pend-card__s">Número de admitidos por convocatoria y año.</p>
+    <dl class="pend-list">
+      <div class="pend-row">
+        <dt>Admitidos UdeA</dt>
+        <dd class="pend-row__v"><span class="pending">— por confirmar</span></dd>
+        <dd class="pend-row__s">Número de admitidos por convocatoria y año.</dd>
       </div>
-      <div class="pend-card">
-        <p class="pend-card__k">Puntaje global promedio</p>
-        <p class="pend-card__v"><span class="pending">— por confirmar</span></p>
-        <p class="pend-card__s">Promedio Saber 11 de los estudiantes del ciclo.</p>
+      <div class="pend-row">
+        <dt>Puntaje global promedio</dt>
+        <dd class="pend-row__v"><span class="pending">— por confirmar</span></dd>
+        <dd class="pend-row__s">Promedio Saber 11 de los estudiantes del ciclo.</dd>
       </div>
-      <div class="pend-card">
-        <p class="pend-card__k">Puntaje más alto</p>
-        <p class="pend-card__v"><span class="pending">— por confirmar</span></p>
-        <p class="pend-card__s">Mejor resultado del ciclo, con nombre y autorización.</p>
+      <div class="pend-row">
+        <dt>Puntaje más alto</dt>
+        <dd class="pend-row__v"><span class="pending">— por confirmar</span></dd>
+        <dd class="pend-row__s">Mejor resultado del ciclo, con nombre y autorización.</dd>
       </div>
-    </div>
+    </dl>
 
     <div class="gal">
       <figure class="slot slot--4x3">
@@ -584,33 +584,41 @@
   <div class="wrap">
     <h2 class="head__h">Trámites y servicios.</h2>
 
-    <div class="serv-grid">
+    <div class="serv-list">
       <article class="serv" id="estudiantes">
         <h3 class="serv__h">Estudiantes</h3>
-        <p>Acceso al aula virtual: material de repaso, circulares, simulacros y
-        resultados. Solo para estudiantes matriculados.</p>
-        <p class="serv__link"><span class="pending">— enlace por conectar</span></p>
+        <div class="serv__body">
+          <p>Acceso al aula virtual: material de repaso, circulares, simulacros
+          y resultados. Solo para estudiantes matriculados.</p>
+          <p class="serv__link"><span class="pending">— enlace por conectar</span></p>
+        </div>
       </article>
 
       <article class="serv" id="pagos">
         <h3 class="serv__h">Pagos en línea</h3>
-        <p>Pago por PSE a través de Davivienda y por la plataforma Zona Pagos,
-        los dos canales que la institución tiene habilitados.</p>
-        <p class="serv__link"><span class="pending">— enlace por conectar</span></p>
+        <div class="serv__body">
+          <p>Pago por PSE a través de Davivienda y por la plataforma Zona Pagos,
+          los dos canales que la institución tiene habilitados.</p>
+          <p class="serv__link"><span class="pending">— enlace por conectar</span></p>
+        </div>
       </article>
 
       <article class="serv" id="pqrsf">
         <h3 class="serv__h">P.Q.R.S.F</h3>
-        <p>Peticiones, quejas, reclamos, sugerencias y felicitaciones. Canal
-        formal de atención a estudiantes y acudientes.</p>
-        <p class="serv__link"><span class="pending">— formulario por conectar</span></p>
+        <div class="serv__body">
+          <p>Peticiones, quejas, reclamos, sugerencias y felicitaciones. Canal
+          formal de atención a estudiantes y acudientes.</p>
+          <p class="serv__link"><span class="pending">— formulario por conectar</span></p>
+        </div>
       </article>
 
       <article class="serv" id="trabaje">
         <h3 class="serv__h">Trabaje con nosotros</h3>
-        <p>Convocatorias para docentes y personal administrativo. Recepción de
-        hojas de vida.</p>
-        <p class="serv__link"><span class="pending">— formulario por conectar</span></p>
+        <div class="serv__body">
+          <p>Convocatorias para docentes y personal administrativo. Recepción de
+          hojas de vida.</p>
+          <p class="serv__link"><span class="pending">— formulario por conectar</span></p>
+        </div>
       </article>
     </div>
   </div>
