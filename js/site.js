@@ -38,6 +38,42 @@
     });
   }
 
+  /* ---- 1b · Submenú Institucional ------------------------------------ */
+
+  var subTrigger = document.querySelector('.nav__sub-trigger');
+  var sub = document.getElementById('sub-inst');
+
+  if (subTrigger && sub) {
+    var closeSub = function () {
+      subTrigger.setAttribute('aria-expanded', 'false');
+      sub.hidden = true;
+    };
+
+    subTrigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = subTrigger.getAttribute('aria-expanded') === 'true';
+      subTrigger.setAttribute('aria-expanded', String(!open));
+      sub.hidden = open;
+    });
+
+    sub.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') { closeSub(); }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!sub.hidden && !sub.contains(e.target) && e.target !== subTrigger) {
+        closeSub();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !sub.hidden) {
+        closeSub();
+        subTrigger.focus();
+      }
+    });
+  }
+
   /* ---- 2 + 3 · Barra inferior ---------------------------------------- */
 
   var bar = document.getElementById('bar');

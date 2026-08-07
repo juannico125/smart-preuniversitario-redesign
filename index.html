@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smart Preuniversitario · Popayán — Pre Saber 11 y Preuniversitario UdeA</title>
-<meta name="description" content="Preparación presencial en Popayán para la prueba Saber 11 del ICFES y para el examen de admisión de la Universidad de Antioquia. Demostración de diseño, no oficial.">
+<title>Smart Preuniversitario · Popayán — Pre Saber 11, Preuniversitario UdeA y aula virtual</title>
+<meta name="description" content="Preparación en Popayán para la prueba Saber 11 del ICFES y para el examen de admisión de la Universidad de Antioquia. Presencial y en aula virtual con clases en vivo. Demostración de diseño, no oficial.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,20 @@
 
 <a class="skip" href="#main">Saltar al contenido</a>
 
-<!-- ============ Nav · N1b canonical three-section, floating rounded ============ -->
+<!-- ============ Franja superior — verde profundo, como la del sitio actual ============ -->
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <p class="topbar__t">Popayán, Cauca · Calle 5 <span class="mono">#</span> 3-18, Centro</p>
+    <div class="topbar__acts">
+      <a href="#estudiantes">Estudiantes</a>
+      <a href="#pagos">Pagos en línea</a>
+      <a href="#pqrsf">P.Q.R.S.F</a>
+      <a href="#contacto">Contáctenos</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Nav · N1b canonical three-section ============ -->
 <header class="nav" id="nav">
   <nav class="nav__inner" aria-label="Principal">
     <a class="nav__brand" href="#top">
@@ -25,15 +38,26 @@
     </a>
 
     <ul class="nav__links">
-      <li><a href="#programas">Programas</a></li>
-      <li><a href="#ruta">La ruta</a></li>
-      <li><a href="#sede">Sede</a></li>
-      <li><a href="#preguntas">Preguntas</a></li>
+      <li><a href="#top">Inicio</a></li>
+      <li class="nav__has-sub">
+        <button type="button" class="nav__sub-trigger" aria-expanded="false" aria-controls="sub-inst">
+          Institucional <span class="nav__caret" aria-hidden="true">▾</span>
+        </button>
+        <ul class="nav__sub" id="sub-inst" hidden>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#ensenanza">Sistema de Enseñanza</a></li>
+          <li><a href="#valores">Valores Institucionales</a></li>
+        </ul>
+      </li>
+      <li><a href="#preuniversitario">Preuniversitario</a></li>
+      <li><a href="#preicfes">Preicfes</a></li>
+      <li><a href="#sedes">Sedes</a></li>
+      <li><a href="#admitidos">Admitidos</a></li>
     </ul>
 
     <div class="nav__actions">
-      <a class="nav__quiet" href="#informacion">Estudiantes</a>
-      <a class="btn btn--fill nav__cta" href="#informacion">Solicitar información</a>
+      <a class="nav__quiet" href="#estudiantes">Estudiantes</a>
+      <a class="btn btn--fill nav__cta" href="#contacto">Contáctenos</a>
     </div>
 
     <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet">
@@ -43,18 +67,26 @@
   </nav>
 
   <div class="nav__sheet" id="nav-sheet" hidden>
-    <a href="#programas">Programas</a>
-    <a href="#ruta">La ruta</a>
-    <a href="#sede">Sede</a>
-    <a href="#preguntas">Preguntas</a>
-    <a href="#informacion">Estudiantes</a>
-    <a class="btn btn--fill" href="#informacion">Solicitar información</a>
+    <a href="#top">Inicio</a>
+    <p class="nav__sheet-h">Institucional</p>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#ensenanza">Sistema de Enseñanza</a>
+    <a href="#valores">Valores Institucionales</a>
+    <p class="nav__sheet-h">Programas</p>
+    <a href="#preuniversitario">Preuniversitario UdeA</a>
+    <a href="#preicfes">Preicfes — Saber 11</a>
+    <a href="#aula">Aula virtual</a>
+    <p class="nav__sheet-h">Más</p>
+    <a href="#sedes">Sedes</a>
+    <a href="#admitidos">Admitidos</a>
+    <a href="#estudiantes">Estudiantes</a>
+    <a class="btn btn--fill" href="#contacto">Contáctenos</a>
   </div>
 </header>
 
 <main id="main">
 
-<!-- ============ Hero · H2 split diptych · ratio 7/5 · right = ficha técnica ============ -->
+<!-- ============ Hero · H2 split diptych · izquierda texto, derecha video ============ -->
 <section class="hero" id="top">
   <div class="wrap hero__grid">
 
@@ -65,66 +97,66 @@
       </h1>
 
       <p class="hero__p">
-        Smart Preuniversitario prepara estudiantes de Popayán para la prueba
-        Saber&nbsp;11 del ICFES y para el examen de admisión de la Universidad
-        de Antioquia. Presencial, en el centro, desde 2011.
+        Preparación para la prueba Saber&nbsp;11 del ICFES y para el examen de
+        admisión de la Universidad de Antioquia. Presencial en el centro de
+        Popayán y en aula virtual con clases en vivo por videoconferencia.
       </p>
 
       <ul class="chips">
-        <li class="chip">Presencial · Sede Centro de Popayán</li>
-        <li class="chip">Pre Saber 11 y Preuniversitario UdeA</li>
-        <li class="chip">Operando desde 2011</li>
+        <li class="chip">Sede Centro de Popayán</li>
+        <li class="chip chip--gold">Aula virtual · clases en vivo</li>
+        <li class="chip">Desde 2011</li>
         <li class="chip">Aprobado por la Secretaría de Educación</li>
       </ul>
 
       <div class="hero__actions">
-        <a class="btn btn--fill" href="#informacion">Solicitar información</a>
-        <a class="btn btn--ghost" href="#programas">Ver los programas</a>
+        <a class="btn btn--fill" href="#contacto">Solicitar información</a>
+        <a class="btn btn--wa" href="#contacto">Escríbenos por WhatsApp</a>
       </div>
     </div>
 
-    <!-- Proof column: a real spec panel. Empty fields are labelled, not invented. -->
-    <aside class="ficha" aria-labelledby="ficha-h">
-      <h2 class="ficha__h" id="ficha-h">Ficha del ciclo</h2>
-
-      <dl class="ficha__list">
-        <div class="ficha__row">
-          <dt>Programas</dt>
-          <dd>Pre Saber 11 · Preuniversitario UdeA</dd>
-        </div>
-        <div class="ficha__row">
-          <dt>Modalidad</dt>
-          <dd>Presencial</dd>
-        </div>
-        <div class="ficha__row">
-          <dt>Ciudad</dt>
-          <dd>Popayán, Cauca</dd>
-        </div>
-        <div class="ficha__row">
-          <dt>Inicio del próximo ciclo</dt>
-          <dd><span class="pending">— por confirmar</span></dd>
-        </div>
-        <div class="ficha__row">
-          <dt>Duración</dt>
-          <dd><span class="pending">— por confirmar</span></dd>
-        </div>
-        <div class="ficha__row">
-          <dt>Inversión</dt>
-          <dd><span class="pending">— por confirmar</span></dd>
-        </div>
-      </dl>
-
-      <p class="ficha__note">
-        Los campos marcados <span class="pending pending--inline">—</span> están
-        pendientes de confirmación por la institución. Esta demostración no
-        publica cifras que no pueda verificar.
-      </p>
-    </aside>
+    <!-- Espacio reservado para el video de presentación. -->
+    <figure class="slot slot--16x9 slot--hero">
+      <figcaption class="slot__cap">
+        <span class="slot__kind">Video</span>
+        <span class="slot__what">Video de presentación</span>
+        <span class="slot__spec">MP4 o YouTube · 16:9 · 1920×1080 px</span>
+      </figcaption>
+    </figure>
 
   </div>
 </section>
 
-<!-- ============ Hechos verificables · T4 stat strip — real facts only ============ -->
+<!-- ============ Accesos rápidos — los cinco botones del sitio actual ============ -->
+<section class="accesos" aria-labelledby="accesos-h">
+  <div class="wrap">
+    <h2 class="u-sr" id="accesos-h">Accesos rápidos</h2>
+    <ul class="accesos__grid">
+      <li><a class="acceso acceso--deep" href="#estudiantes">
+        <span class="acceso__t">Estudiantes</span>
+        <span class="acceso__s">Aula virtual y material</span>
+      </a></li>
+      <li><a class="acceso acceso--gold" href="#trabaje">
+        <span class="acceso__t">Trabaje con nosotros</span>
+        <span class="acceso__s">Convocatorias docentes</span>
+      </a></li>
+      <li><a class="acceso" href="#pqrsf">
+        <span class="acceso__t">P.Q.R.S.F</span>
+        <span class="acceso__s">Peticiones y reclamos</span>
+      </a></li>
+      <li><a class="acceso acceso--gold" href="#pagos">
+        <span class="acceso__t">Pagos en línea</span>
+        <span class="acceso__s">Davivienda PSE · Zona Pagos</span>
+      </a></li>
+      <li><a class="acceso acceso--deep" href="#admitidos">
+        <span class="acceso__t">Nuestros puntajes</span>
+        <span class="acceso__s">Admitidos y resultados</span>
+      </a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ Franja de hechos · verde profundo ============ -->
 <section class="facts" aria-label="La institución en cifras">
   <div class="wrap facts__grid">
     <div class="fact">
@@ -146,8 +178,53 @@
   </div>
 </section>
 
+<!-- ============ Ficha del ciclo ============ -->
+<section class="section" id="ficha">
+  <div class="wrap ficha-grid">
+    <div>
+      <h2 class="head__h">El ciclo, en datos.</h2>
+      <p class="head__p">
+        Lo que necesitas saber antes de inscribirte. Los campos marcados
+        <span class="pending pending--inline">—</span> están pendientes de
+        confirmación por la institución; esta demostración no publica cifras
+        que no pueda verificar.
+      </p>
+    </div>
+
+    <aside class="ficha" aria-labelledby="ficha-h">
+      <h3 class="ficha__h" id="ficha-h">Ficha del ciclo</h3>
+      <dl class="ficha__list">
+        <div class="ficha__row">
+          <dt>Programas</dt>
+          <dd>Pre Saber 11 · Preuniversitario UdeA</dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Modalidades</dt>
+          <dd>Presencial · Aula virtual en vivo</dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Ciudad</dt>
+          <dd>Popayán, Cauca</dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Inicio del próximo ciclo</dt>
+          <dd><span class="pending">— por confirmar</span></dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Duración</dt>
+          <dd><span class="pending">— por confirmar</span></dd>
+        </div>
+        <div class="ficha__row">
+          <dt>Inversión</dt>
+          <dd><span class="pending">— por confirmar</span></dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
 <!-- ============ Programas · F3 tabular spec sheet ============ -->
-<section class="section" id="programas">
+<section class="section section--tint" id="programas">
   <div class="wrap">
     <div class="head">
       <h2 class="head__h">Dos programas, dos exámenes distintos.</h2>
@@ -164,8 +241,8 @@
         <thead>
           <tr>
             <th scope="col" class="spec__key">&nbsp;</th>
-            <th scope="col">Pre Saber 11</th>
-            <th scope="col">Preuniversitario UdeA</th>
+            <th scope="col" id="preicfes">Preicfes — Saber 11</th>
+            <th scope="col" id="preuniversitario">Preuniversitario UdeA</th>
           </tr>
         </thead>
         <tbody>
@@ -185,8 +262,8 @@
             <td>Razonamiento lógico · Competencia lectora</td>
           </tr>
           <tr>
-            <th scope="row">Modalidad</th>
-            <td>Presencial — Sede Centro</td>
+            <th scope="row">Modalidades</th>
+            <td>Presencial y aula virtual en vivo</td>
             <td>Presencial — Sede Centro</td>
           </tr>
           <tr>
@@ -215,7 +292,36 @@
   </div>
 </section>
 
-<!-- ============ La ruta · F4 step sequence — the macrostructure's spine ============ -->
+<!-- ============ Aula virtual ============ -->
+<section class="section band" id="aula">
+  <div class="wrap band__grid">
+    <div>
+      <h2 class="band__h">Curso Preicfes Saber 11 en aula virtual.</h2>
+      <p class="band__p">
+        Clases en vivo por videoconferencia, no videos grabados. El estudiante
+        entra a la hora de la sesión, ve al docente, pregunta y resuelve con el
+        grupo — lo mismo que pasa en el salón, desde la casa.
+      </p>
+      <ul class="band__list">
+        <li>Clases en vivo por videoconferencia</li>
+        <li>Material de repaso y circulares en la plataforma</li>
+        <li>Simulacros y resultados dentro del aula</li>
+        <li>Acceso para estudiantes matriculados</li>
+      </ul>
+      <a class="btn btn--gold" href="#contacto">Quiero información del aula virtual</a>
+    </div>
+
+    <figure class="slot slot--16x10 slot--on-dark">
+      <figcaption class="slot__cap">
+        <span class="slot__kind">Imagen o video</span>
+        <span class="slot__what">Captura del aula virtual en una clase en vivo</span>
+        <span class="slot__spec">PNG o MP4 · 16:10 · mínimo 1600×1000 px</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ La ruta · F4 step sequence ============ -->
 <section class="section section--tint" id="ruta">
   <div class="wrap">
     <div class="head">
@@ -287,49 +393,135 @@
   </div>
 </section>
 
-<!-- ============ Cómo enseñamos · prose, S2 hanging head ============ -->
-<section class="section" id="metodo">
-  <div class="wrap prose-grid">
-    <div class="prose">
-      <h2 class="head__h">Por qué presencial, y por qué en grupo pequeño.</h2>
-      <p>
-        La prueba Saber&nbsp;11 y el examen de la UdeA no premian saber más
-        contenido. Premian resolver bajo tiempo, descartar rápido y sostener la
-        atención tres horas seguidas. Eso se entrena en un salón, con alguien
-        mirando cómo trabaja el estudiante y corrigiendo el hábito en el momento.
-      </p>
-      <p>
-        Un video no puede ver que un estudiante lleva doce minutos en una
-        pregunta que debía tomarle noventa segundos. Un docente sí. Por eso el
-        ciclo es presencial en la sede del centro de Popayán, y por eso los
-        simulacros se hacen en el salón y no en la casa.
-      </p>
-      <p>
-        El aula virtual existe y está activa, pero cumple otra función: es donde
-        el estudiante matriculado encuentra material de repaso, circulares y
-        resultados entre sesión y sesión.
+<!-- ============ Institucional · Nosotros / Enseñanza / Valores ============ -->
+<section class="section" id="institucional">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="head__h">Institucional.</h2>
+      <p class="head__p">
+        Quiénes somos, cómo enseñamos y en qué creemos — las tres páginas del
+        menú Institucional, reunidas aquí.
       </p>
     </div>
 
-    <aside class="aside-card">
-      <h3 class="aside-card__h">Aprobación oficial</h3>
-      <p class="aside-card__p">
-        Smart Preuniversitario opera bajo la Resolución
-        <span class="mono">N.° 20161700086834</span> del 10 de agosto de 2016,
-        expedida por la Secretaría de Educación Municipal de Popayán.
-      </p>
-      <p class="aside-card__p aside-card__p--muted">
-        Institución constituida el 25 de julio de 2011.
-      </p>
-    </aside>
+    <div class="inst-grid">
+      <article class="inst" id="nosotros">
+        <h3 class="inst__h">Nosotros</h3>
+        <p>
+          Smart Preuniversitario se constituyó el 25 de julio de 2011 en
+          Popayán. Opera con aprobación de la Secretaría de Educación Municipal
+          bajo la Resolución <span class="mono">N.° 20161700086834</span> del 10
+          de agosto de 2016.
+        </p>
+        <p class="inst__pend">
+          <span class="pending">— texto institucional por confirmar</span>
+          El sitio actual tiene una página «Nosotros» cuyo contenido no fue
+          copiado aquí; la institución debe aportar su redacción oficial.
+        </p>
+      </article>
+
+      <article class="inst" id="ensenanza">
+        <h3 class="inst__h">Sistema de Enseñanza</h3>
+        <p>
+          El ciclo sigue la ruta de cinco etapas descrita arriba: diagnóstico,
+          fundamentación, entrenamiento, simulacros y presentación. Se dicta
+          presencial en la sede del centro y, para Preicfes, también en aula
+          virtual con clases en vivo.
+        </p>
+        <p class="inst__pend">
+          <span class="pending">— metodología oficial por confirmar</span>
+          La descripción de la ruta es una propuesta de redacción, no el texto
+          del sitio original.
+        </p>
+      </article>
+
+      <article class="inst" id="valores">
+        <h3 class="inst__h">Valores Institucionales</h3>
+        <p class="inst__pend">
+          <span class="pending">— por confirmar</span>
+          El sitio actual tiene una página «Valores Institucionales». Su
+          contenido no se reprodujo: la institución debe aportar el listado
+          oficial de valores y su redacción.
+        </p>
+      </article>
+    </div>
+
+    <figure class="slot slot--21x9">
+      <figcaption class="slot__cap">
+        <span class="slot__kind">Imagen</span>
+        <span class="slot__what">Fachada o salones de la sede</span>
+        <span class="slot__spec">JPG · 21:9 panorámica · mínimo 2100×900 px</span>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- ============ Sede ============ -->
-<section class="section section--tint" id="sede">
+<!-- ============ Admitidos y puntajes ============ -->
+<section class="section section--tint" id="admitidos">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="head__h">Admitidos y puntajes.</h2>
+      <p class="head__p">
+        La sección con más peso comercial de todo el sitio — y la que necesita
+        datos reales para funcionar. Aquí van los admitidos por convocatoria y
+        los puntajes destacados del ciclo.
+      </p>
+    </div>
+
+    <div class="pend-grid">
+      <div class="pend-card">
+        <p class="pend-card__k">Admitidos UdeA</p>
+        <p class="pend-card__v"><span class="pending">— por confirmar</span></p>
+        <p class="pend-card__s">Número de admitidos por convocatoria y año.</p>
+      </div>
+      <div class="pend-card">
+        <p class="pend-card__k">Puntaje global promedio</p>
+        <p class="pend-card__v"><span class="pending">— por confirmar</span></p>
+        <p class="pend-card__s">Promedio Saber 11 de los estudiantes del ciclo.</p>
+      </div>
+      <div class="pend-card">
+        <p class="pend-card__k">Puntaje más alto</p>
+        <p class="pend-card__v"><span class="pending">— por confirmar</span></p>
+        <p class="pend-card__s">Mejor resultado del ciclo, con nombre y autorización.</p>
+      </div>
+    </div>
+
+    <div class="gal">
+      <figure class="slot slot--4x3">
+        <figcaption class="slot__cap">
+          <span class="slot__kind">Foto</span>
+          <span class="slot__what">Admitido 1 — con autorización de uso de imagen</span>
+          <span class="slot__spec">JPG · 4:3 · mínimo 1200×900 px</span>
+        </figcaption>
+      </figure>
+      <figure class="slot slot--4x3">
+        <figcaption class="slot__cap">
+          <span class="slot__kind">Foto</span>
+          <span class="slot__what">Admitido 2 — con autorización de uso de imagen</span>
+          <span class="slot__spec">JPG · 4:3 · mínimo 1200×900 px</span>
+        </figcaption>
+      </figure>
+      <figure class="slot slot--4x3">
+        <figcaption class="slot__cap">
+          <span class="slot__kind">Foto</span>
+          <span class="slot__what">Admitido 3 — con autorización de uso de imagen</span>
+          <span class="slot__spec">JPG · 4:3 · mínimo 1200×900 px</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="gal__note">
+      Si alguno de los admitidos es menor de edad, se necesita autorización
+      escrita del acudiente antes de publicar su foto o su nombre.
+    </p>
+  </div>
+</section>
+
+<!-- ============ Sedes ============ -->
+<section class="section" id="sedes">
   <div class="wrap sede">
     <div>
-      <h2 class="head__h">La sede.</h2>
+      <h2 class="head__h">Sede Popayán.</h2>
       <p class="sede__addr">Calle 5 <span class="mono">#</span> 3-18, Centro<br>Popayán, Cauca</p>
       <dl class="sede__list">
         <div class="sede__row">
@@ -349,20 +541,96 @@
           <dd><span class="pending">— por confirmar</span></dd>
         </div>
       </dl>
-      <a class="btn btn--ghost" href="#informacion">Agendar una visita</a>
+      <a class="btn btn--ghost" href="#contacto">Agendar una visita</a>
     </div>
 
-    <div class="map-well" role="img" aria-label="Espacio reservado para el mapa de la sede en Calle 5 número 3-18, centro de Popayán.">
-      <p class="map-well__t">Mapa de la sede</p>
-      <p class="map-well__s">
-        Espacio reservado. En la versión conectada va un mapa embebido —
-        en esta demostración no se cargan servicios externos.
-      </p>
+    <figure class="slot slot--4x3">
+      <figcaption class="slot__cap">
+        <span class="slot__kind">Mapa o foto</span>
+        <span class="slot__what">Ubicación de la sede</span>
+        <span class="slot__spec">Google Maps embebido o JPG 4:3 · 1200×900 px</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ Universidades y entidades ============ -->
+<section class="section section--tint" id="entidades">
+  <div class="wrap">
+    <h2 class="head__h">Universidades y entidades.</h2>
+    <p class="head__p">
+      Los enlaces institucionales que el sitio actual pone a disposición de
+      estudiantes y acudientes.
+    </p>
+
+    <ul class="ents">
+      <li class="ent"><span class="ent__n">Universidad del Cauca</span><span class="ent__s">Admisiones y programas</span></li>
+      <li class="ent"><span class="ent__n">Universidad de Antioquia</span><span class="ent__s">Examen de admisión</span></li>
+      <li class="ent"><span class="ent__n">Universidad de Cartagena</span><span class="ent__s">Admisiones</span></li>
+      <li class="ent"><span class="ent__n">Universidad Nacional de Colombia</span><span class="ent__s">Examen de admisión</span></li>
+      <li class="ent"><span class="ent__n">ICFES</span><span class="ent__s">Inscripción y resultados Saber 11</span></li>
+      <li class="ent"><span class="ent__n">PSE · Zona Pagos</span><span class="ent__s">Pagos en línea</span></li>
+    </ul>
+
+    <p class="ents__note">
+      Los logotipos de estas entidades son marcas registradas de sus titulares y
+      no se reproducen en esta demostración.
+    </p>
+  </div>
+</section>
+
+<!-- ============ Servicios: estudiantes, pagos, PQRSF, trabaje ============ -->
+<section class="section" id="servicios">
+  <div class="wrap">
+    <h2 class="head__h">Trámites y servicios.</h2>
+
+    <div class="serv-grid">
+      <article class="serv" id="estudiantes">
+        <h3 class="serv__h">Estudiantes</h3>
+        <p>Acceso al aula virtual: material de repaso, circulares, simulacros y
+        resultados. Solo para estudiantes matriculados.</p>
+        <p class="serv__link"><span class="pending">— enlace por conectar</span></p>
+      </article>
+
+      <article class="serv" id="pagos">
+        <h3 class="serv__h">Pagos en línea</h3>
+        <p>Pago por PSE a través de Davivienda y por la plataforma Zona Pagos,
+        los dos canales que la institución tiene habilitados.</p>
+        <p class="serv__link"><span class="pending">— enlace por conectar</span></p>
+      </article>
+
+      <article class="serv" id="pqrsf">
+        <h3 class="serv__h">P.Q.R.S.F</h3>
+        <p>Peticiones, quejas, reclamos, sugerencias y felicitaciones. Canal
+        formal de atención a estudiantes y acudientes.</p>
+        <p class="serv__link"><span class="pending">— formulario por conectar</span></p>
+      </article>
+
+      <article class="serv" id="trabaje">
+        <h3 class="serv__h">Trabaje con nosotros</h3>
+        <p>Convocatorias para docentes y personal administrativo. Recepción de
+        hojas de vida.</p>
+        <p class="serv__link"><span class="pending">— formulario por conectar</span></p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ FAQ · accordion ============ -->
+<!-- ============ Lo más visto ============ -->
+<section class="section section--tint" id="masvisto">
+  <div class="wrap wrap--narrow">
+    <h2 class="head__h">Lo más visto.</h2>
+    <ul class="visto">
+      <li><a href="#preicfes">Preicfes</a></li>
+      <li><a href="#preuniversitario">Preuniversitario</a></li>
+      <li><a href="#aula">Curso Preicfes Saber 11 en aula virtual</a></li>
+      <li><a href="#preuniversitario">Jornadas UdeA — Sede Popayán</a></li>
+      <li><a href="#admitidos">Nuestros admitidos</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
 <section class="section" id="preguntas">
   <div class="wrap wrap--narrow">
     <h2 class="head__h">Preguntas que nos hacen.</h2>
@@ -382,6 +650,15 @@
           <p>Sí. Resolución <span class="mono">N.° 20161700086834</span> del 10
           de agosto de 2016, de la Secretaría de Educación Municipal de Popayán.
           La institución se constituyó el 25 de julio de 2011.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>¿Las clases virtuales son grabadas o en vivo?</summary>
+        <div class="qa__body">
+          <p>En vivo, por videoconferencia. El curso Preicfes Saber 11 en aula
+          virtual se dicta con el docente presente en la sesión, no con videos
+          pregrabados.</p>
         </div>
       </details>
 
@@ -412,16 +689,6 @@
       </details>
 
       <details class="qa">
-        <summary>¿Hay clases virtuales?</summary>
-        <div class="qa__body">
-          <p>El ciclo es presencial. El aula virtual es un complemento para
-          estudiantes matriculados: material de repaso, circulares y resultados.
-          Ocasionalmente se programan jornadas virtuales cuando el calendario lo
-          obliga.</p>
-        </div>
-      </details>
-
-      <details class="qa">
         <summary>¿Qué pasa si mi hijo entra a mitad de ciclo?</summary>
         <div class="qa__body">
           <p><span class="pending">— por confirmar.</span> Depende del punto de
@@ -434,7 +701,7 @@
 </section>
 
 <!-- ============ CTA final · formulario visual, sin conectar ============ -->
-<section class="section cta" id="informacion">
+<section class="section cta" id="contacto">
   <div class="wrap cta__grid">
     <div>
       <h2 class="cta__h">Cuéntanos quién eres y te escribimos.</h2>
@@ -442,6 +709,12 @@
         Te respondemos con el valor del ciclo, la fecha de inicio y el
         cronograma del programa que te interesa.
       </p>
+      <dl class="cta__meta">
+        <div><dt>Teléfono</dt><dd class="mono">838 7383</dd></div>
+        <div><dt>Celular</dt><dd class="mono">313 657 3011</dd></div>
+        <div><dt>Celular</dt><dd class="mono">321 247 0001</dd></div>
+        <div><dt>Dirección</dt><dd>Calle 5 <span class="mono">#</span> 3-18, Centro</dd></div>
+      </dl>
     </div>
 
     <!-- No action, no method, no handler. Nothing is submitted. -->
@@ -466,7 +739,8 @@
       <div class="field">
         <label for="f-programa">Programa de interés</label>
         <select id="f-programa" name="programa">
-          <option>Pre Saber 11</option>
+          <option>Preicfes — Saber 11 (presencial)</option>
+          <option>Preicfes — Saber 11 (aula virtual)</option>
           <option>Preuniversitario UdeA</option>
           <option>Todavía no lo tengo claro</option>
         </select>
@@ -495,18 +769,49 @@
       <p class="foot__tag">Popayán, Cauca — desde 2011.</p>
     </div>
 
-    <ul class="foot__links">
-      <li><a href="#programas">Programas</a></li>
-      <li><a href="#ruta">La ruta</a></li>
-      <li><a href="#metodo">Método</a></li>
-      <li><a href="#sede">Sede</a></li>
-      <li><a href="#preguntas">Preguntas</a></li>
-      <li><a href="#informacion">Contacto</a></li>
-    </ul>
+    <div class="foot__cols">
+      <div class="foot__col">
+        <p class="foot__col-h">Institucional</p>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#ensenanza">Sistema de Enseñanza</a></li>
+          <li><a href="#valores">Valores Institucionales</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__col-h">Programas</p>
+        <ul>
+          <li><a href="#preicfes">Preicfes — Saber 11</a></li>
+          <li><a href="#preuniversitario">Preuniversitario UdeA</a></li>
+          <li><a href="#aula">Aula virtual</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__col-h">Trámites</p>
+        <ul>
+          <li><a href="#estudiantes">Estudiantes</a></li>
+          <li><a href="#pagos">Pagos en línea</a></li>
+          <li><a href="#pqrsf">P.Q.R.S.F</a></li>
+          <li><a href="#trabaje">Trabaje con nosotros</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <p class="foot__col-h">Más</p>
+        <ul>
+          <li><a href="#sedes">Sedes</a></li>
+          <li><a href="#admitidos">Admitidos y puntajes</a></li>
+          <li><a href="#entidades">Universidades</a></li>
+          <li><a href="#contacto">Contáctenos</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="foot__legal">
-      <p>Calle 5 <span class="mono">#</span> 3-18, Centro · Popayán, Cauca · <span class="mono">838 7383</span></p>
-      <p>Resolución <span class="mono">N.° 20161700086834</span> del 10 de agosto de 2016 — Secretaría de Educación Municipal de Popayán.</p>
+      <p class="foot__legal-h">Aspectos legales</p>
+      <p>Calle 5 <span class="mono">#</span> 3-18, Centro · Popayán (Cauca)</p>
+      <p>Tel: <span class="mono">838 7383</span> · Cel: <span class="mono">313 657 3011</span> — <span class="mono">321 247 0001</span></p>
+      <p>Smart Preuniversitario inició el 25 de julio de 2011.</p>
+      <p>Resolución de la Secretaría de Educación Municipal <span class="mono">N.° 20161700086834</span> del 10 de agosto de 2016.</p>
       <p class="foot__demo">
         Demostración de diseño, no oficial. Página estática sin funciones
         conectadas, construida como propuesta de rediseño.
@@ -517,8 +822,8 @@
 
 <!-- ============ C4 sticky bottom bar · reveals after the fold ============ -->
 <div class="bar" id="bar" hidden>
-  <p class="bar__t">Inscripciones abiertas para el próximo ciclo.</p>
-  <a class="btn btn--fill btn--sm" href="#informacion">Solicitar información</a>
+  <p class="bar__t">Inscripciones abiertas — presencial y aula virtual.</p>
+  <a class="btn btn--gold btn--sm" href="#contacto">Solicitar información</a>
   <button class="bar__x" type="button" aria-label="Cerrar aviso">
     <span aria-hidden="true">×</span>
   </button>
