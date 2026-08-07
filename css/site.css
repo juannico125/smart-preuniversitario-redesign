@@ -982,11 +982,19 @@ a { color: inherit; }
 
 /* ============ Espacios reservados para media ============ */
 
+/* The width is the constraint; aspect-ratio derives the height from it.
+ * Never let a slot be stretched by its grid row — with aspect-ratio a definite
+ * height resolves the WIDTH, which overflows the track. */
 .slot {
   display: grid;
   place-items: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  align-self: start;
   margin: 0;
   padding: var(--space-lg);
+  overflow: hidden;
   background: var(--color-pending);
   border: 2px dashed var(--color-rule);
   border-radius: var(--radius-card);
@@ -996,7 +1004,6 @@ a { color: inherit; }
 .slot--16x10 { aspect-ratio: 16 / 10; }
 .slot--4x3   { aspect-ratio: 4 / 3; }
 .slot--21x9  { aspect-ratio: 21 / 9; margin-top: var(--space-2xl); }
-.slot--hero  { align-self: stretch; }
 
 .slot__cap { display: grid; gap: var(--space-3xs); max-width: 34ch; }
 .slot__kind {
