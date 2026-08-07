@@ -301,15 +301,17 @@ a { color: inherit; }
  * instead of floating above it. */
 .hero { padding-block: var(--space-xl) var(--space-2xl); }
 
+/* Media-led: the video column is the wider one, and both columns centre on the
+ * same axis so the slot doesn't leave a dead gap beneath it. */
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: var(--space-2xl);
-  align-items: start;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--space-xl);
+  align-items: center;
 }
 
 .hero__h1 {
-  font-size: var(--text-display);
+  font-size: var(--text-display-s);
   max-width: 15ch;
 }
 /* Emphasis by weight, not italic. Gate 38a. */
